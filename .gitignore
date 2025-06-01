@@ -1,0 +1,10 @@
+# Original h5 and txt files are still in trace
+# We only ignore the newly added h5 and txt files
+
+__pycache__/
+*.pyc
+*.h5
+*.txt
+
+# .gitignore
+
