@@ -19,6 +19,8 @@ Function : The orbits within a shell are derived based on a clustering algorithm
 import jenkspy
 import src.TLE_constellation.constellation_entity.orbit as ORBIT
 import matplotlib.pyplot as plt
+import os
+import time
 
 # Parameter :
 # shells : a collection of shell objects that have established corresponding relationships
@@ -98,4 +100,14 @@ def satellite_to_orbit_mapping(shells):
             sh.orbits.append(orbit)
     
     plt.tight_layout()
-    plt.show()
+    
+    output_dir = "image"
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    
+    timestamp = time.strftime("%Y%m%d_%H%M%S", time.localtime())
+    filename = f"satellite_orbit_mapping_{len(shells)}shells_{timestamp}.png"
+    filepath = os.path.join(output_dir, filename)
+    
+    plt.savefig(filepath, dpi=300, bbox_inches='tight')
+    print(f"\t\t\tImages Saved to: {filepath}")
