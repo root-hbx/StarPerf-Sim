@@ -1,5 +1,5 @@
 <constellation>
-    <number_of_shells>4</number_of_shells>
+    <number_of_shells>1</number_of_shells>
     <shell1>
         <altitude>550</altitude>
         <orbit_cycle>5731</orbit_cycle>
@@ -8,7 +8,7 @@
         <number_of_orbit>72</number_of_orbit>
         <number_of_satellite_per_orbit>22</number_of_satellite_per_orbit>
     </shell1>
-    <shell2>
+    <!-- <shell2>
         <altitude>570</altitude>
         <orbit_cycle>5755</orbit_cycle>
         <inclination>70</inclination>
@@ -31,6 +31,6 @@
         <phase_shift>1</phase_shift>
         <number_of_orbit>72</number_of_orbit>
         <number_of_satellite_per_orbit>22</number_of_satellite_per_orbit>
-    </shell4>
+    </shell4> -->
 </constellation>
 
