@@ -11,7 +11,7 @@ import src.constellation_generation.by_XML.constellation_configuration as conste
 
 
 def constellation_generation_test():
-    constellation_name = "Telesat"
+    constellation_name = "Kuiper"
     # generate the constellations
     constellation = constellation_configuration.constellation_configuration(dT=15,
                                                                             constellation_name=constellation_name)

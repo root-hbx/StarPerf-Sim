@@ -2,6 +2,8 @@
     <number_of_shells>1</number_of_shells>
     <shell1>
         <altitude>630</altitude>
+        <!-- orbit_cycle / dT = timeslot_item_num -->
+        <!-- orbit_cycle can be calculated in src/standalone_module/satellite_orbital_period.py -->
         <orbit_cycle>5830</orbit_cycle>
         <inclination>51.9</inclination>
         <phase_shift>0</phase_shift>
